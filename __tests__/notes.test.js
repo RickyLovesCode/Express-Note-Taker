@@ -1,12 +1,11 @@
 const fs = require("fs");
-const { } = require("module");
-const { execPath } = require("process");
 const {
     createNewNote,
     validateNote,
     deleteNote,
 } = require("../lib/notes");
 
+jest.mock("fs");
 test("create note OBJ", () => {
     const note = {
         name: "test",
@@ -22,4 +21,11 @@ test("create note OBJ", () => {
 
 test("validate notes", () => {
     const note = [{ name: "test", Text: "Testing...", id: "rickytest123" }];
-}) 
+    const result = validateNote(note);
+    expect(result).toBe(true)
+});
+
+test("delete note", () => {
+    const note = [{}];
+    const newNote = deleteNote("", note);
+})
