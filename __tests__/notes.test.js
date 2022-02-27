@@ -9,21 +9,21 @@ jest.mock("fs");
 
 test("create note OBJ", () => {
     const note = {
-        name: "test",
-        Text: "Testing...",
+        title: "test",
+        text: "Testing...",
         id: "rickytest123"
     };
 
-    expect(note.name).toBe("test");
-    expect(note.Text).toBe("Testing...");
+    expect(note.title).toBe("test");
+    expect(note.text).toBe("Testing...");
     expect(note.id).toBe("rickytest123");
 
 });
 
 test("validate note", () => {
     const note = [
-        { name: "test", Text: "Testing...", id: "rickytest123" },
-        { name: "test two", Text: "Testing..., two", id: "rickytest123" },
+        { title: "test", text: "Testing...", id: "rickytest123" },
+        { title: "test two", text: "Testing..., two", id: "rickytest123" },
     ];
 
     const result = validateNote(note[0]);
@@ -32,8 +32,8 @@ test("validate note", () => {
 
 test("delete note", () => {
     const note = [
-        { name: "test", Text: "Testing...", id: "rickytest123" },
-        { name: "test two", Text: "Testing..., two", id: "rickytest123" },
+        { title: "test", text: "Testing...", id: "rickytest123" },
+        { title: "test two", text: "Testing..., two", id: "rickytest123" },
     ];
 
     const newNote = deleteNote("rickytest123", note);
