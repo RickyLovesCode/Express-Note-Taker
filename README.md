@@ -21,7 +21,6 @@ A Note Taker app that allows the user to take notes, Delete, and save notes.
 
 ## **preview** 
 
----
 
 ## ___How to use___
 
@@ -41,7 +40,7 @@ A Note Taker app that allows the user to take notes, Delete, and save notes.
 ---
 
 ## **Test process**
-___
+
 I used TDD process, with Jest package to ensure code works properly.
 
 ---
@@ -49,7 +48,7 @@ I used TDD process, with Jest package to ensure code works properly.
 
 ## *Contact Me*
 
-----
+
 **Email:** RickyRenteria7@gmail.com
 
 **Linkedin:** 
