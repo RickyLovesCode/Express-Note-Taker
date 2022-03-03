@@ -21,10 +21,11 @@ A Note Taker app that allows the user to take notes, Delete, and save notes.
 
 ## **preview** 
 
+![Screenshot (19)](https://user-images.githubusercontent.com/69219899/156505718-b863a41b-aed4-44c0-bb4b-636adecc31da.png)
 
 ## ___How to use___
 
-1. Navigate to "" and Clone SSH key to your local or HTTP. 
+1. Navigate to "https://github.com/RickyLovesCode/Express-Note-Taker" and HTTP or Clone SSH key to your local.
 
 2. Make sure to have Node.js installed, and run this command in your terminal
 > `npm install ` 
@@ -33,9 +34,9 @@ A Note Taker app that allows the user to take notes, Delete, and save notes.
 > `npm start `
 
 4. You then should the following in your terminal:
-![terminal img]().
+![Screenshot (20)](https://user-images.githubusercontent.com/69219899/156506134-394b67fb-5e26-484d-82b9-6284a9f8e57d.png)
 
-5. navigate to [](). and you should be able to take notes !
+5. navigate to "https://tranquil-atoll-99879.herokuapp.com/" and you should be able to take notes !
 
 ---
 
