@@ -5,10 +5,10 @@ const { v4: uuidv4 } = require("uuid");
 const {
     createNewNote,
     validateNote,
-    deleteNote,
+    deleteExistingNote,
 } = require("../../lib/notes");
 
-const notes = require("../../Develop/db/db.json");
+const notes = require("../../db/db.json");
 
 router.get("/notes", (req, res) => {
     res.json(notes);
@@ -18,7 +18,7 @@ router.post("/notes", (req, res) => {
     req.body.id = uuidv4();
 
     if (!validateNote(req.body)) {
-        res.status(400).send("note is formatted!");
+        res.status(400).send("The note is not properly formatted!");
     } else {
         const note = createNewNote(req.body, notes);
         res.json(note);
@@ -27,12 +27,9 @@ router.post("/notes", (req, res) => {
 
 router.delete("/notes/:id", (req, res) => {
     const noteID = req.params.id;
-    const note = deleteNote(noteID, notes);
+    const note = deleteExistingNote(noteID, notes);
 
     res.send(note);
 });
-
-
-
 
 module.exports = router;

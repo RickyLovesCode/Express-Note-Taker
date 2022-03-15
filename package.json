@@ -1,25 +1,20 @@
 {
-  "name": "express-note-taker",
+  "name": "note-taker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RickyLovesCode/Express-Note-Taker.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RickyLovesCode/Express-Note-Taker/issues"
-  },
-  "homepage": "https://github.com/RickyLovesCode/Express-Note-Taker#readme",
   "dependencies": {
     "express": "^4.17.3",
-    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
     "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
   }
 }
