@@ -2,9 +2,9 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const notesApiRoutes = require("./routes/apiRoutes/notesApi.js");
-const indexRoutes = require("./routes/htmlRoutes/index.js");
-const notesRoutes = require("./routes/htmlRoutes/notes.js");
+const notesApiRoutes = require("./routes/apiRoutes/notesApi");
+const indexRoutes = require("./routes/htmlRoutes/index");
+const notesRoutes = require("./routes/htmlRoutes/notes");
 
 // parse incoming string or array data
 app.use(express.urlencoded({ extended: true }));
